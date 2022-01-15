@@ -61,13 +61,14 @@ import reportWebVitals from './reportWebVitals';
 // </div>
 // ,document.getElementById("root"));
 
-/*  ###################################################################
-    ###################################################################
-    ###################################################################
-                    Why React? It's declarative
-    ###################################################################
-    ###################################################################
-    ###################################################################
+/* 
+    !###################################################################
+    !###################################################################
+    !###################################################################
+    ?                   Why React? It's declarative
+    !###################################################################
+    !###################################################################
+    !###################################################################
 */
 
 //ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
@@ -88,13 +89,14 @@ appending an h1 to our div#root (without using innerHTML).
 // h1.className = "header"
 // document.getElementById("root").append(h1)
 
-/*  ###################################################################
-    ###################################################################
-    ###################################################################
-                                JSX
-    ###################################################################
-    ###################################################################
-    ###################################################################
+/*  
+    !###################################################################
+    !###################################################################
+    !###################################################################
+    ?                            JSX
+    !###################################################################
+    !###################################################################
+    !###################################################################
 */
 
 const h1 = document.createElement("h1");
@@ -118,16 +120,84 @@ console.log(element);
 //     page, document.getElementById("root")
 // )
 
-const navbar = (
-    <nav>
-        <h1>My website</h1>
+// const navbar = (
+//     <nav>
+//         <h1>My website</h1>
+//         <ul>
+//             <li>Menue</li>
+//             <li>About</li>
+//             <li>Contact</li>
+//         </ul>
+//     </nav>
+// )
+
+// ReactDOM.render(navbar, document.getElementById("root"))
+
+
+/*  
+    !###################################################################
+    !###################################################################
+    !###################################################################
+    ?  Thought experiment: use .appened() instead of ReactDOM.render()
+    !###################################################################
+    !###################################################################
+    !###################################################################
+*/
+
+/**
+*Challenge: find out what happens if we try to append JSX
+to our div#root using .append() instead of ReactDOM
+
+1. Create a sample page in JSX (≥ 4 elements) and save them in a variable
+2. Select the div with the ID of "root" and use `.append()` to append
+   your JSX
+3. See if you can guess what will show up in the browser before running
+   the code
+4. See if you can explain what actually shows up in the browser
+ */
+
+// const page  = (
+//   <div>
+//     <h1>My awesom website in React</h1>
+//     <h3>Reasonse I love react</h3>
+//     <ol>
+//       <li>It's composable</li>
+//       <li>It's declarative</li>
+//       <li>It's a hireable skill</li>
+//       <li>It's a activitly maintained by skilled people</li>
+//     </ol>
+//   </div>
+// )
+
+// ReactDOM.render(page, document.getElementById("root"))
+
+
+/*
+Challenge: Starting from scratch, build and render the 
+HTML for our section project. Check the Google slide for 
+what you're trying to build.
+
+We'll be adding styling to it later.
+
+Hints:
+* The React logo is a file in the project tree, so you can
+  access it by using `src="./react-logo.png" in your image
+  element
+* You can also set the `width` attribute of the image element
+  just like in HTML. In the slide, I have it set to 40px
+ */
+  const page = (
+    <div>
+        <img src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png" width="40px" />
+        <h1>Fun facts about React</h1>
         <ul>
-            <li>Menue</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li>Was first released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 100K stars on GitHub</li>
+            <li>Is maintained by Facebook</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
-    </nav>
+    </div>
 )
 
-ReactDOM.render(navbar, document.getElementById("root"))
-
+ReactDOM.render(page, document.getElementById("root"))
