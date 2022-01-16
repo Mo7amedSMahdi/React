@@ -4,6 +4,9 @@ import "./index.css";
 // import Header from "./components/Header"
 // import Footer from "./components/Footer"
 // import MainContent from "./components/MainContent"
+import CardHeader from "./components/CardHeader";
+import CardContent from "./components/CardContent";
+import CardFooter from "./components/CardFooter";
 
 //React Components
 
@@ -381,6 +384,30 @@ Challenge: Project setup
   works if you haven't done it before)
 */
 
-import App from './App';
+/* import App from './App';
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<App />, document.getElementById("root")) */
+
+/*  
+    !###################################################################
+    !###################################################################
+    !###################################################################
+    ?                     Solo Project
+    !###################################################################
+    !###################################################################
+    !###################################################################
+*/
+
+function Page() {
+  return (
+    <div className="container">
+      <div className="card">
+        <CardHeader />
+        <CardContent />
+        <CardFooter />
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"));

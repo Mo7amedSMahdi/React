@@ -82,3 +82,72 @@ main {
   font-size: 1.4rem;
   color: #61DAFB;
 }
+
+/*  
+    !###################################################################
+    !###################################################################
+    !###################################################################
+    ?                     Solo Project
+    !###################################################################
+    !###################################################################
+    !###################################################################
+*/
+.container {
+  width:  317px;
+  margin: 30px auto;
+}
+.card {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  background-color: #1A1B21;
+}
+.card-head {
+}
+
+.header-content {
+  padding: 10px;
+ line-height:1.4rem;
+}
+.name{
+  display:flex;
+  justify-content: center;
+  color: #fff;
+}
+.job-title{
+  display:flex;
+  justify-content: center;
+  color: #F3BF99;
+  font-size: 12.8px;
+}
+.website{
+  display:flex;
+  justify-content: center;
+  color : #F5F5F5;
+  font-size:10.24px;
+}
+
+.header-image >img{
+  width:100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-content > button{
+  margin: 16px auto 16px auto ;
+  width:100%;
+  padding:10px;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size:14px;
+  line-height:16px;
+}
+.header-content > button > i{
+  padding-right: 8px;
+}
+
+.card-content{
+  margin: 16px auto 16px auto ;
+  width: 247px;
+  color: #fff;
+  line-height:15.36px;
+  font-size: 10.24px;
+}
