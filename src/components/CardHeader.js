@@ -1,4 +1,5 @@
 import personalImage from "../images/personal-image.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function CardHeader() {
   return (
@@ -13,7 +14,7 @@ export default function CardHeader() {
         <div className="job-title">Frontend Developer</div>
         <div className="webSite">laurasmith.website</div>
         <button type="button" className="btn">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <FontAwesomeIcon icon={['fas','envelope']} />
         Email
         </button>
       </div>

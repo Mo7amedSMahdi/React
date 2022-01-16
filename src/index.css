@@ -151,3 +151,25 @@ main {
   line-height:15.36px;
   font-size: 10.24px;
 }
+.nav{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.nav > li {
+  padding:10px;
+}
+.nav> li > a {
+  font-size:2rem;
+  color: #918E9B;
+  transition: all .2s ease-in-out; 
+}
+a:hover {
+  color: #F3BF99 !important;
+}
+a>svg:hover{
+  transform: scale(1.1);
+  transition: all .2s ease-in-out; 
+}
