@@ -1,10 +1,12 @@
+import reactLogo from "../images/react_logo.png"
+
 export default function Header() {
   return (
     <header>
       <nav className="nav">
         <img
           className="nav-logo"
-          src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png"
+          src={reactLogo}
         />
         <ul className="nav-items">
           <li>Pricing</li>

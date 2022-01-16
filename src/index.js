@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Header from "./Header"
-import Footer from "./Footer"
-import MainContent from "./MainContent"
+// import Header from "./components/Header"
+// import Footer from "./components/Footer"
+// import MainContent from "./components/MainContent"
 
 //React Components
 
@@ -82,12 +82,13 @@ appending an h1 to our div#root (without using innerHTML).
 - Give it a class name of "header"
 - append it as a child of the div#root
     
-*/
 
-// const h1 = document.createElement("h1")
-// h1.textContent = "This is an imparative way to program"
-// h1.className = "header"
-// document.getElementById("root").append(h1)
+
+const h1 = document.createElement("h1")
+h1.textContent = "This is an imparative way to program"
+h1.className = "header"
+ document.getElementById("root").append(h1)
+*/
 
 /*  
     !###################################################################
@@ -99,39 +100,40 @@ appending an h1 to our div#root (without using innerHTML).
     !###################################################################
 */
 
-// const h1 = document.createElement("h1");
-// h1.textContent = "Hello world";
-// h1.className = "header";
-// console.log(h1);
+/* const h1 = document.createElement("h1");
+h1.textContent = "Hello world";
+h1.className = "header";
+console.log(h1);
 
-// const element = <h1 className="header">This is JSX</h1>;
-// console.log(element);
+const element = <h1 className="header">This is JSX</h1>;
+console.log(element);
 
-// JSX
-// !ReactDOM.render(element, document.getElementById("root"));
+JSX
+!ReactDOM.render(element, document.getElementById("root"));
 
-// const page  =(
-// <div>
-//     <h1 className="header">This is JSX</h1>
-//     <p>This is a paragraph</p>
-// </div>)
+const page  =(
+<div>
+    <h1 className="header">This is JSX</h1>
+    <p>This is a paragraph</p>
+</div>)
 
-// ReactDOM.render(
-//     page, document.getElementById("root")
-// )
+ReactDOM.render(
+    page, document.getElementById("root")
+)
 
-// const navbar = (
-//     <nav>
-//         <h1>My website</h1>
-//         <ul>
-//             <li>Menue</li>
-//             <li>About</li>
-//             <li>Contact</li>
-//         </ul>
-//     </nav>
-// )
+const navbar = (
+    <nav>
+        <h1>My website</h1>
+        <ul>
+            <li>Menue</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
 
-// ReactDOM.render(navbar, document.getElementById("root"))
+ReactDOM.render(navbar, document.getElementById("root"))
+ */
 
 /*  
     !###################################################################
@@ -153,22 +155,23 @@ to our div#root using .append() instead of ReactDOM
 3. See if you can guess what will show up in the browser before running
    the code
 4. See if you can explain what actually shows up in the browser
- */
+ 
 
-// const page  = (
-//   <div>
-//     <h1>My awesom website in React</h1>
-//     <h3>Reasonse I love react</h3>
-//     <ol>
-//       <li>It's composable</li>
-//       <li>It's declarative</li>
-//       <li>It's a hireable skill</li>
-//       <li>It's a activitly maintained by skilled people</li>
-//     </ol>
-//   </div>
-// )
+const page  = (
+  <div>
+    <h1>My awesom website in React</h1>
+    <h3>Reasonse I love react</h3>
+    <ol>
+      <li>It's composable</li>
+      <li>It's declarative</li>
+      <li>It's a hireable skill</li>
+      <li>It's a activitly maintained by skilled people</li>
+    </ol>
+  </div>
+)
 
-// ReactDOM.render(page, document.getElementById("root"))
+ReactDOM.render(page, document.getElementById("root"))
+*/
 
 /*
 Challenge: Starting from scratch, build and render the 
@@ -184,21 +187,21 @@ Hints:
 * You can also set the `width` attribute of the image element
   just like in HTML. In the slide, I have it set to 40px
  */
-//   const page = (
-//     <div>
-//         <img src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png" width="40px" />
-//         <h1>Fun facts about React</h1>
-//         <ul>
-//             <li>Was first released in 2013</li>
-//             <li>Was originally created by Jordan Walke</li>
-//             <li>Has well over 100K stars on GitHub</li>
-//             <li>Is maintained by Facebook</li>
-//             <li>Powers thousands of enterprise apps, including mobile apps</li>
-//         </ul>
-//     </div>
-// )
+/*   const page = (
+    <div>
+        <img src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png" width="40px" />
+        <h1>Fun facts about React</h1>
+        <ul>
+            <li>Was first released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 100K stars on GitHub</li>
+            <li>Is maintained by Facebook</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
+    </div>
+)
 
-// ReactDOM.render(page, document.getElementById("root"))
+ReactDOM.render(page, document.getElementById("root")) */
 
 /*  
     !###################################################################
@@ -236,31 +239,31 @@ Part 2:
 
  */
 
-// function CustomPageComponent() {
-//   return (
-//     <>
-//       <header>
-//         <nav>
-//           <img
-//             width="40px"
-//             src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png"
-//           />
-//         </nav>
-//       </header>
-//       <h1>Reasons I'm excited to learn React</h1>
-//       <ol>
-//         <li>
-//           It's a popular library, so I'll be able to fit in with the cool kids!
-//         </li>
-//         <li>I'm more likely to get a job as a developer if I know React</li>
-//       </ol>
-//       <footer>
-//         <small>© 2021 Ziroll development. All rights reserved.</small>
-//       </footer>
-//     </>
-//   );
-// }
-// ReactDOM.render(<CustomPageComponent />, document.getElementById("root"));
+/* function CustomPageComponent() {
+  return (
+    <>
+      <header>
+        <nav>
+          <img
+            width="40px"
+            src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png"
+          />
+        </nav>
+      </header>
+      <h1>Reasons I'm excited to learn React</h1>
+      <ol>
+        <li>
+          It's a popular library, so I'll be able to fit in with the cool kids!
+        </li>
+        <li>I'm more likely to get a job as a developer if I know React</li>
+      </ol>
+      <footer>
+        <small>© 2021 Ziroll development. All rights reserved.</small>
+      </footer>
+    </>
+  );
+}
+ReactDOM.render(<CustomPageComponent />, document.getElementById("root")); */
 
 /*  
     !###################################################################
@@ -272,50 +275,50 @@ Part 2:
     !###################################################################
 */
 
-// function Header() {
-//   return (
-//     <header>
-//       <nav>
-//         <img
-//           width="40px"
-//           src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png"
-//         />
-//       </nav>
-//     </header>
-//   );
-// }
+/*function Header() {
+  return (
+    <header>
+      <nav>
+        <img
+          width="40px"
+          src="https://dwglogo.com/wp-content/uploads/2017/09/1460px-React_logo.png"
+        />
+      </nav>
+    </header>
+  );
+}
 
-// function Footer() {
-//   return (
-//     <footer>
-//       <small>© 2021 Ziroll development. All rights reserved.</small>
-//     </footer>
-//   );
-// }
-// function MainContent() {
-//   return (
-//     <div>
-//       <h1>Reasons I'm excited to learn React</h1>
-//       <ol>
-//         <li>
-//           It's a popular library, so I'll be able to fit in with the cool kids!
-//         </li>
-//         <li>I'm more likely to get a job as a developer if I know React</li>
-//       </ol>
-//     </div>
-//   );
-// }
+function Footer() {
+  return (
+    <footer>
+      <small>© 2021 Ziroll development. All rights reserved.</small>
+    </footer>
+  );
+}
+function MainContent() {
+  return (
+    <div>
+      <h1>Reasons I'm excited to learn React</h1>
+      <ol>
+        <li>
+          It's a popular library, so I'll be able to fit in with the cool kids!
+        </li>
+        <li>I'm more likely to get a job as a developer if I know React</li>
+      </ol>
+    </div>
+  );
+}
 
-// function Page() {
-//   return (
-//     <>
-//       <Header />
-//       <MainContent />
-//       <Footer />
-//     </>
-//   );
-// }
-// ReactDOM.render(<Page />, document.getElementById("root"));
+function Page() {
+  return (
+    <>
+      <Header />
+      <MainContent />
+      <Footer />
+    </>
+  );
+}
+ReactDOM.render(<Page />, document.getElementById("root")); */
 
 /*  
     !###################################################################
@@ -334,7 +337,7 @@ Challenge:
   the following `li`s: "Pricing", "About", & "Contact"
 */
 
-
+/* 
 function Page() {
   return (
     <>
@@ -344,4 +347,40 @@ function Page() {
     </>
   );
 }
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<Page />, document.getElementById("root")); */
+
+/*  
+    !###################################################################
+    !###################################################################
+    !###################################################################
+    ?                      Project SetUp
+    !###################################################################
+    !###################################################################
+    !###################################################################
+*/
+
+/**
+Challenge: Project setup
+
+- Create a `components` folder
+- Create the following components in separate files inside
+  the components folder.  In each one, just render an `h1` 
+  with the name of the component (e.g. return <h1>Navbar goes here</h1>):
+    - Navbar
+    - Main
+- Create an App component outside the components folder (sibling to
+  the index.js file)
+    - Have App render the Navbar and Main components
+- Import and render the App component inside of index.js using ReactDOM
+    - At this point you should have your "Navbar goes here" etc. showing up
+      in the mini-browser.
+- Go to Google fonts and get the "Inter" font with weights 400, 600, and 700.
+  Put the links to those fonts ABOVE the style.css link in index.html (Use
+  the `<link/>` elements instead of the @import or npm options for getting
+  the fonts. You may need to do some extra research to figure out how this 
+  works if you haven't done it before)
+*/
+
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById("root"))
