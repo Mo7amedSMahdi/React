@@ -9,9 +9,9 @@ import CardContent from "./components/CardContent";
 import CardFooter from "./components/CardFooter";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { envelope,faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab,faCoffee)
+library.add(fab,fas)
 
 //React Components
 

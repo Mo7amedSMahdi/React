@@ -101,9 +101,6 @@ main {
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
   background-color: #1A1B21;
 }
-.card-head {
-}
-
 .header-content {
   padding: 10px;
  line-height:1.4rem;
@@ -140,8 +137,9 @@ main {
   font-size:14px;
   line-height:16px;
 }
-.header-content > button > i{
-  padding-right: 8px;
+.header-content > button > svg{
+  margin-right: 8px;
+  font-size:14.8px;
 }
 
 .card-content{
